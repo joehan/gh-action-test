@@ -36,5 +36,5 @@ jobs:
         
       - name: Deploy extensions to Firebase project 
         shell: bash
-        run: firebase deploy --debug --only extensions --token ${{secrets.fb_token}}
+        run: firebase deploy --debug --only extensions --force --token ${{secrets.fb_token}}
         working-directory: .
