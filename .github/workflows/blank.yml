@@ -36,5 +36,5 @@ jobs:
         
       - name: Deploy extensions to Firebase project 
         shell: bash
-        run: npm run deploy:extensions
+        run: firebase deploy --debug --only extensions
         working-directory: .
